@@ -12,3 +12,6 @@ build/
 
 devDb.mv.db
 devDb.mv.db
+devDb.trace.db
+hs_err_pid8880.log
+replay_pid8880.log
