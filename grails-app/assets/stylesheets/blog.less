@@ -1,0 +1,45 @@
+@grey-base: #EFEFEF;
+@font-stack: 'Josefin Sans', sans-serif;
+@navbar-background: #000000;
+@navbar-font-color-links: #FFFFFF;
+@navbar-font-color-links-hover: #AAAAAA;
+@navbar-background-open: #555555;
+
+.font-and-background-base() {
+  background-color: @grey-base;
+  font-family: @font-stack;
+  font-size: 16px;
+}
+
+.navbar-background() {
+  background-color: @navbar-background;
+}
+
+
+html {
+  .font-and-background-base;
+}
+
+body {
+  .font-and-background-base;
+}
+
+.navbar {
+  font-weight: bold;
+  .navbar-background;
+  .dropdown-toggle {
+    color: @navbar-font-color-links!important;
+    &:hover {
+      color: @navbar-font-color-links-hover!important;
+    }
+  }
+  .dropdown-menu {
+    background-color: @grey-base;
+  }
+}
+
+.open {
+  .dropdown-toggle {
+    background-color: @navbar-background-open!important;
+  }
+}
