@@ -6,6 +6,9 @@
     <link rel="icon" href="http://getbootstrap.com/favicon.ico" type="image/x-ico" />
   </head>
   <body>
+
+    <content tag="homeActive">class=active</content>
+
     <h1>Hello, world!</h1>
 
   </body>
